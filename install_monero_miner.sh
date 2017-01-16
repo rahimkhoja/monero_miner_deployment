@@ -1,3 +1,7 @@
+#!/bin/sh
+
+echo $PWD
+
 # Update & Upgrade Apt
 
 sudo apt-get -y update && sudo apt-get -y upgrade
@@ -28,9 +32,13 @@ make
 
 sudo make install
 
+# return to install dir
+
+cd ..
+
 # Copy Service File
 
-cp ./monero-miner.service /lib/systemd/system/
+sudo /bin/bash -c "cp $(pwd -P)/monero-miner.service /lib/systemd/system/"
 
 # Reload Systemd Services
 sudo systemctl daemon-reload
