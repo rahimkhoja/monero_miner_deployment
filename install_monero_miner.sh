@@ -12,11 +12,12 @@ sudo apt-get install git wget
 
 # dependencies
 
-sudo apt-get install build-essential autotools-dev autoconf libcurl3 libcurl4-gnutls-dev
+sudo apt-get install build-essential autotools-dev libcurl3 automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
 
 # download latest version
 
-git clone https://github.com/wolf9466/cpuminer-multi
+#git clone https://github.com/wolf9466/cpuminer-multi
+git clone https://github.com/tpruvot/cpuminer-multi
 
 cd cpuminer-multi/
 
