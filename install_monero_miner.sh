@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# Get Wallet Address
 defaultwal=42VxjBpfi4TS6KFjNrrKo3QLcyK7gBGfM9w7DxmGRcocYnEbJ1hhZWXfaHJtCXBxnL74DpkioPSivjRYU8qkt59s3EaHUU3
 defaulthost=monero.hiive.biz:3333
 
+# Get Wallet Address
 finish="-1"
 while [ "$finish" = '-1' ]
   do
@@ -26,6 +26,8 @@ while [ "$finish" = '-1' ]
     fi
 done
 echo
+
+# Get Pool Address
 finish="-1"
 while [ "$finish" = '-1' ]
   do
