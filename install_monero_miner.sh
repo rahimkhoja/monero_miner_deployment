@@ -100,7 +100,7 @@ sudo /bin/bash -c "cp $(pwd -P)/monero-miner.service /lib/systemd/system/"
 
 # Update SystemD file
 
-suod sed -e "s/{walletaddress}/$WALLET/" -e "s/{minehost}/$MINEHOST/"  /lib/systemd/system/monero-miner.service
+sudo sed -e "s/{walletaddress}/$WALLET/" -e "s/{mineaddress}/$MINEHOST/"  /lib/systemd/system/monero-miner.service
 
 # Reload Systemd Services
 sudo systemctl daemon-reload
