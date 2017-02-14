@@ -67,7 +67,7 @@ echo "Installing Monero Miner"
 sudo apt-get -y update && sudo apt-get -y upgrade
 
 # get git to install it
-sudo apt-get install git wget build-essential autotools-dev libcurl3 automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
+sudo apt-get -y install git wget build-essential autotools-dev libcurl3 automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
 
 # download latest version
 git clone https://github.com/wolf9466/cpuminer-multi
