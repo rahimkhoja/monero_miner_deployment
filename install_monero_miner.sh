@@ -1,6 +1,6 @@
 #!/bin/sh
 # Monero Miner Deployment
-# By Rahim Khoja (rahimk@khojacorp.com)
+# By Rahim Khoja (rahimk@khoja.ca)
 
 # Default Wallet Address & Pool Host Values
 defaultwal=42VxjBpfi4TS6KFjNrrKo3QLcyK7gBGfM9w7DxmGRcocYnEbJ1hhZWXfaHJtCXBxnL74DpkioPSivjRYU8qkt59s3EaHUU3
